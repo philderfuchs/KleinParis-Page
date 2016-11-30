@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="jquery/jquery-3.1.1.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <script>
+        $(document)
+            .ready(function () {
+
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function () {
+                            $('.fixed.menu').transition('fade down');
+                        },
+                        onBottomPassedReverse: function () {
+                            $('.fixed.menu').transition('fade up');
+                        }
+                    })
+                ;
+
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item')
+                ;
+
+                $('.ui.accordion')
+                    .accordion()
+                ;
+
+                $('.ui.dropdown')
+                    .dropdown()
+                ;
+
+            })
+        ;
+    </script>
+</head>
+<body>
+
+<div class="ui large inverted top fixed hidden menu">
+    <div class="ui container">
+        <a class="active item">Home</a>
+        <a class="item">Work</a>
+        <a class="item">Company</a>
+        <a class="item">Careers</a>
+        <div class="ui dropdown item" tabindex="0">
+            Dropdown
+            <i class="dropdown icon"></i>
+            <div class="menu" tabindex="-1">
+                <div class="item">Action</div>
+                <div class="item">Another Action</div>
+                <div class="item">Something else here</div>
+                <div class="divider"></div>
+                <div class="item">Separated Link</div>
+                <div class="divider"></div>
+                <div class="item">One more separated link</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pusher">
+
+    <div class="masthead">
+        <div class="ui container vertical center aligned segment">
+            <div class="ui massive inverted menu">
+                <div class="item">Brand</div>
+                <div class="item">Link</div>
+                <a class="item">Link</a>
+                <div class="ui dropdown item" tabindex="0">
+                    Dropdown
+                    <i class="dropdown icon"></i>
+                    <div class="menu" tabindex="-1">
+                        <div class="item">Action</div>
+                        <div class="item">Another Action</div>
+                        <div class="item">Something else here</div>
+                        <div class="divider"></div>
+                        <div class="item">Separated Link</div>
+                        <div class="divider"></div>
+                        <div class="item">One more separated link</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    KleinParis
+                </h1>
+                <h2 class="ui inverted header">Urbaner Tanz in Leipzig.</h2>
+                <div class="purple ui huge button">Buchen <i class="right arrow icon"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portofolio">
+
+        <div class="ui container">
+
+            <div class="ui four cards">
+                <a class="red card">
+                    <div class="content">
+                        <h2 class="ui red center aligned icon header">
+                            <i class="red calendar  icon"></i>
+                            Shows
+                            <div class="sub header">Firmenfeier, Stadtfest, egal.</div>
+                        </h2>
+                    </div>
+                </a>
+                <a class="yellow card">
+                    <div class="content">
+                        <h2 class="ui yellow center aligned icon header">
+                            <i class="yellow bug  icon"></i>
+                            Battles
+                            <div class="sub header">Das, was wir halt wirklich machen.</div>
+                        </h2>
+                    </div>
+                </a>
+                <a class="olive card">
+                    <div class="content">
+                        <h2 class="ui olive center aligned icon header">
+                            <i class="olive idea icon"></i>
+                            Kurse
+                            <div class="sub header">Weil, wir müssen auch Geld verdienen.</div>
+                        </h2>
+                    </div>
+                </a>
+                <a class="teal card">
+                    <div class="content">
+                        <h2 class="ui teal center aligned icon header">
+                            <i class="teal exchange icon"></i>
+                            Nachwuchstraining
+                            <div class="sub header">Wir sind alle nur wegen Karin da.</div>
+                        </h2>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div id="about">
+        <div class="ui container">
+            <h2 class="ui inverted center aligned icon header">
+                <i class="circular red heart icon"></i>
+                Wir lieben Urbanen Tanz.
+                <div class="sub header">Und möchten ihn mit euch teilen.</div>
+            </h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..
+            </p>
+            <p class="text">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+            </p>
+
+            <h4 class="ui inverted horizontal divider header">
+                <i class="idea icon"></i>
+                Urbaner Tanz besteht aus vielen Tanzrichtungen
+            </h4>
+            <p class="text">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+            </p>
+            <div class="ui styled accordion">
+                <div class="active title">
+                    <i class="dropdown icon"></i>
+                    HipHop
+                </div>
+                <div class="active content">
+                    <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found
+                        as a welcome guest in many households across the world.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Popping
+                </div>
+                <div class="content">
+                    <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a
+                        breed of dog that they find to be compatible with their own lifestyle and desires from a
+                        companion.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Locking
+                </div>
+                <div class="content">
+                    <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
+                        shelters.</p>
+                    <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows
+                        you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly,
+                        finding your dog from a shelter, helps give a good home to a dog who may not find one so
+                        readily.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    House
+                </div>
+                <div class="content">
+                    <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
+                        shelters.</p>
+                    <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows
+                        you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly,
+                        finding your dog from a shelter, helps give a good home to a dog who may not find one so
+                        readily.</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Breakdance
+                </div>
+                <div class="content">
+                    <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
+                        shelters.</p>
+                    <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows
+                        you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly,
+                        finding your dog from a shelter, helps give a good home to a dog who may not find one so
+                        readily.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="member">
+
+        <div class="ui container">
+            <h1 class="ui header center aligned">Eine Crew ist die Summe ihrer Mitglieder.</h1>
+            <h4 class="ui horizontal divider header">
+                <i class="users icon"></i>
+            </h4>
+
+            <div class="ui four stackable cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="img/daniel.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Daniel Grahnert</div>
+                        <div class="meta">
+                            <a>HipHop/Popping/Locking</a>
+                        </div>
+                        <div class="description">
+                            Eine Woche lang meditieren - genau mein Ding.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2014
+      </span>
+                        <span>
+        <i class="heart icon"></i>
+        75 Heartihearts
+      </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="img/ken.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Ken</div>
+                        <div class="meta">
+                            <span class="date">HipHop/House/Popping/Locking</span>
+                        </div>
+                        <div class="description">
+                            Ich wohne noch zu Hause - aber verratet's keinem.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2014
+      </span>
+                        <span>
+        <i class="user icon"></i>
+        0 Heartihearts
+      </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="img/alex.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Alex</div>
+                        <div class="meta">
+                            <a>HipHop/House/Locking/Experimental</a>
+                        </div>
+                        <div class="description">
+                            Als keiner hingeschaut hat, habe ich heimlich eine Ausbildung in zeitgenössischem Tanz
+                            gemacht.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2014
+      </span>
+                        <span>
+        <i class="user icon"></i>
+        299 Heartihearts
+      </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="img/annski.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Annski</div>
+                        <div class="meta">
+                            <a>HipHop/Breakdance/Popping</a>
+                        </div>
+                        <div class="description">
+                            Ja, der Arsch kommt vom Breaken. Und von meiner Mama.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2015
+      </span>
+                        <span>
+        <i class="user icon"></i>
+        500 Heartihearts
+      </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="img/daniel.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Daniel Grahnert</div>
+                        <div class="meta">
+                            <a>HipHop/Popping/Locking</a>
+                        </div>
+                        <div class="description">
+                            Eine Woche lang meditieren - genau mein Ding.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2014
+      </span>
+                        <span>
+        <i class="heart icon"></i>
+        75 Heartihearts
+      </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="img/ken.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Ken</div>
+                        <div class="meta">
+                            <span class="date">HipHop/House/Popping/Locking</span>
+                        </div>
+                        <div class="description">
+                            Ich wohne noch zu Hause - aber verratet's keinem.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2014
+      </span>
+                        <span>
+        <i class="user icon"></i>
+        0 Heartihearts
+      </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="img/alex.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Alex</div>
+                        <div class="meta">
+                            <a>HipHop/House/Locking/Experimental</a>
+                        </div>
+                        <div class="description">
+                            Als keiner hingeschaut hat, habe ich heimlich eine Ausbildung in zeitgenössischem Tanz
+                            gemacht.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2014
+      </span>
+                        <span>
+        <i class="user icon"></i>
+        299 Heartihearts
+      </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="img/annski.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Annski</div>
+                        <div class="meta">
+                            <a>HipHop/Breakdance/Popping</a>
+                        </div>
+                        <div class="description">
+                            Ja, der Arsch kommt vom Breaken. Und von meiner Mama.
+                        </div>
+                    </div>
+                    <div class="extra content">
+      <span class="right floated">
+        Mitglied seit 2015
+      </span>
+                        <span>
+        <i class="user icon"></i>
+        500 Heartihearts
+      </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">About</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Sitemap</a>
+                        <a href="#" class="item">Contact Us</a>
+                        <a href="#" class="item">Religious Ceremonies</a>
+                        <a href="#" class="item">Gazebo Plans</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Services</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Banana Pre-Order</a>
+                        <a href="#" class="item">DNA FAQ</a>
+                        <a href="#" class="item">How To Access</a>
+                        <a href="#" class="item">Favorite X-Men</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Footer Header</h4>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
