@@ -30,11 +30,11 @@
                 $('#member')
                     .visibility({
                         once: false,
-                        onTopPassed : function() {
+                        onTopPassed: function () {
                             $('#memberlink').addClass("active");
                             $('#aboutlink').removeClass("active");
                         },
-                        onTopPassedReverse: function() {
+                        onTopPassedReverse: function () {
                             $('#memberlink').removeClass("active");
                             $('#aboutlink').addClass("active");
                         }
@@ -43,10 +43,10 @@
                 $('#about')
                     .visibility({
                         once: false,
-                        onTopPassed : function() {
+                        onTopPassed: function () {
                             $('#aboutlink').addClass("active");
                         },
-                        onTopPassedReverse: function() {
+                        onTopPassedReverse: function () {
                             $('#aboutlink').removeClass("active");
                         }
                     });
@@ -124,7 +124,7 @@
                         Wir treten auf.
                         <div class="sub header">Bucht uns. Firmenfeier, Staftfest, egal.</div>
                     </h2>
-                    <button class="ui huge inverted teal button">Kostprobe</button>
+                    <button class="ui inverted teal button">Kostprobe</button>
                 </div>
                 <div class="four wide center aligned column porto-icon">
                     <img src="img/badge.png">
@@ -135,7 +135,7 @@
                         Wir machen mit.
                         <div class="sub header">Die Szene findet nicht auf der Bühne statt.</div>
                     </h2>
-                    <button class="ui huge inverted red button">
+                    <button class="ui inverted red button">
                         <i class="youtube icon"></i>
                         YouTube
                     </button>
@@ -149,7 +149,7 @@
                         Wir geben es weiter.
                         <div class="sub header">HipHop lebt vom Autausch. Traniert mit uns, lernt von uns.</div>
                     </h2>
-                    <button class="ui huge inverted yellow button">Zeitplan</button>
+                    <button class="ui inverted yellow button">Zeitplan</button>
 
                 </div>
                 <div class="two wide column"></div>
@@ -393,6 +393,105 @@
 
     </div>
 
+    <div id="training">
+        <div class="ui container">
+
+            <h1 class="ui inverted header">
+                <img class="ui image" src="img/mortarboard.png">
+                <div class="content">
+                    Training
+                </div>
+            </h1>
+
+            <table class="ui stackable inverted celled table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Mon</th>
+                    <th>Die</th>
+                    <th>Mit</th>
+                    <th>Do</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                    <th>So</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>13 - 16 Uhr</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="selectable positive">
+                        <div class="ui horizontal list">
+                            <div class="item">
+                                <img class="ui mini circular image" src="img/heizhaus.png">
+                                <div class="content">
+                                    <div class="ui sub header">Freies Training</div>
+                                    Heizhaus
+                                </div>
+                            </div>
+                        </div>
+                        <p>Alle Urbanen Tanzstile willkommen.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16 - 18 Uhr</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="selectable positive">
+                        <div class="ui horizontal list">
+                            <div class="item">
+                                <img class="ui mini circular image" src="img/heizhaus.png">
+                                <div class="content">
+                                    <div class="ui sub header">Nachwuchstraining</div>
+                                    Heizhaus
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18 - 20 Uhr</td>
+                    <td></td>
+                    <td class="selectable negative">
+                        <div class="ui horizontal list">
+                            <div class="item">
+                                <img class="ui mini circular image" src="img/heizhaus.png">
+                                <div class="content">
+                                    <div class="ui sub header">Geschlossenes Training</div>
+                                    Heizhaus
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td class="selectable negative">
+                        <div class="ui horizontal list">
+                            <div class="item">
+                                <img class="ui mini circular image" src="img/heizhaus.png">
+                                <div class="content">
+                                    <div class="ui sub header">Geschlossenes Training</div>
+                                    Heizhaus
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <div class="ui vertical footer segment">
         <div class="ui container">
