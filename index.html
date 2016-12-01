@@ -38,6 +38,17 @@
                         }
                     });
 
+                $('#about')
+                    .visibility({
+                        once: false,
+                        onTopPassed : function() {
+                            $('#aboutlink').addClass("active");
+                        },
+                        onTopPassedReverse: function() {
+                            $('#aboutlink').removeClass("active");
+                        }
+                    });
+
                 // create sidebar and attach to menu open
                 $('.ui.sidebar')
                     .sidebar('attach events', '.toc.item')
@@ -57,11 +68,18 @@
 </head>
 <body>
 
-<div class="ui large inverted top fixed hidden menu">
+<div class="ui small pointing top fixed hidden menu">
     <div class="ui container">
+        <div class="header item" href="#about" id="aboutlink"><img src="img/kleinparis_small.jpg"></div>
         <a class="item" href="#member" id="memberlink">Crew</a>
         <a class="item">Item</a>
         <a class="item">Item</a>
+        <div class="right menu">
+            <a class="item"><img src="img/paper-plane_black.png"></a>
+            <a class="item"><img src="img/facebook.png"></a>
+            <a class="item"><img src="img/youtube.png"></a>
+            <a class="item"><img src="img/soundcloud.png"></a>
+        </div>
     </div>
 </div>
 
@@ -73,6 +91,12 @@
                 <a class="item" href="#member">Crew</a>
                 <a class="item">Link</a>
                 <a class="item">Link</a>
+                <div class="right menu">
+                    <a class="item"><img src="img/paper-plane_white.png"></a>
+                    <a class="item"><img src="img/facebook.png"></a>
+                    <a class="item"><img src="img/youtube.png"></a>
+                    <a class="item"><img src="img/soundcloud.png"></a>
+                </div>
             </div>
 
             <div class="ui text container">
@@ -98,6 +122,7 @@
                         Wir treten auf.
                         <div class="sub header">Bucht uns. Firmenfeier, Staftfest, egal.</div>
                     </h2>
+                    <button class="ui huge inverted teal button">Kostprobe</button>
                 </div>
                 <div class="four wide center aligned column porto-icon">
                     <img src="img/badge.png">
@@ -108,6 +133,10 @@
                         Wir machen mit.
                         <div class="sub header">Die Szene findet nicht auf der Bühne statt.</div>
                     </h2>
+                    <button class="ui huge inverted red button">
+                        <i class="youtube icon"></i>
+                        YouTube
+                    </button>
                 </div>
                 <div class="four wide center aligned column porto-icon">
                     <img src="img/mortarboard.png">
@@ -118,6 +147,8 @@
                         Wir geben es weiter.
                         <div class="sub header">HipHop lebt vom Autausch. Traniert mit uns, lernt von uns.</div>
                     </h2>
+                    <button class="ui huge inverted yellow button">Zeitplan</button>
+
                 </div>
                 <div class="two wide column"></div>
 
@@ -130,7 +161,7 @@
             <h1 class="ui inverted header center aligned">
                 Wir lieben Urbanen Tanz.
                 <div class="sub header">Und möchten ihn mit euch teilen.</div>
-                <img src="img/heart.png">
+                <img src="img/heart_white.png">
             </h1>
             <div class="ui raised segment">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -213,12 +244,13 @@
     <div id="member">
 
         <div class="ui container">
-            <h1 class="ui teal header center aligned">Eine Crew ist die Summe ihrer Mitglieder.</h1>
-            <div class="ui hidden divider"></div>
-            <div class="ui hidden divider"></div>
 
+            <!--        <h1 class="ui teal header center aligned">Eine Crew ist die Summe ihrer Mitglieder.</h1>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui hidden divider"></div>
+        -->
 
-            <div class="ui three stackable cards">
+            <div class="ui four stackable cards">
                 <div class="card">
                     <div class="image">
                         <img src="img/daniel.jpg" class="member-avatar">
@@ -360,12 +392,12 @@
     </div>
 
 
-    <div class="ui inverted vertical footer segment">
+    <div class="ui vertical footer segment">
         <div class="ui container">
             <div class="ui stackable inverted divided equal height stackable grid">
                 <div class="three wide column">
-                    <h4 class="ui inverted header">About</h4>
-                    <div class="ui inverted link list">
+                    <h4 class="ui header">About</h4>
+                    <div class="ui link list">
                         <a href="#" class="item">Sitemap</a>
                         <a href="#" class="item">Contact Us</a>
                         <a href="#" class="item">Religious Ceremonies</a>
@@ -373,8 +405,8 @@
                     </div>
                 </div>
                 <div class="three wide column">
-                    <h4 class="ui inverted header">Services</h4>
-                    <div class="ui inverted link list">
+                    <h4 class="ui header">Services</h4>
+                    <div class="ui link list">
                         <a href="#" class="item">Banana Pre-Order</a>
                         <a href="#" class="item">DNA FAQ</a>
                         <a href="#" class="item">How To Access</a>
@@ -382,7 +414,7 @@
                     </div>
                 </div>
                 <div class="seven wide column">
-                    <h4 class="ui inverted header">Footer Header</h4>
+                    <h4 class="ui header">Footer Header</h4>
                     <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </div>
             </div>

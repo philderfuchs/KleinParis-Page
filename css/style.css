@@ -8,7 +8,7 @@
 }
 
 .masthead .menu {
-    background: none !important;
+    background: rgba(27, 28, 29, .5) !important;
 }
 
 .button.themecolor {
@@ -43,8 +43,9 @@
 #about {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-color: rgba(18, 0, 5, 0.7);
+    background-color: rgba(50, 0, 50, 0.7);
     position: relative;
+    mix-blend-mode: multiply
 }
 
 #about:after{
@@ -75,11 +76,15 @@
 {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-color: #130A19;
+    background-color: #1B1C1D;
 }
 
 #portofolio img {
     width: 40%;
+}
+
+#portofolio button {
+    width: 80%;
 }
 
 .accordion {
