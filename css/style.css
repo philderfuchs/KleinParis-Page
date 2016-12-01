@@ -21,6 +21,13 @@
     font-size: 4em;
     font-weight: normal;
 }
+
+.masthead img {
+    mix-blend-mode: screen;
+    margin-top: 9em;
+    margin-bottom: 0em;
+}
+
 .masthead h2 {
     font-size: 1.7em;
     font-weight: normal;
