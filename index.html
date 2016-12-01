@@ -32,9 +32,11 @@
                         once: false,
                         onTopPassed : function() {
                             $('#memberlink').addClass("active");
+                            $('#aboutlink').removeClass("active");
                         },
                         onTopPassedReverse: function() {
                             $('#memberlink').removeClass("active");
+                            $('#aboutlink').addClass("active");
                         }
                     });
 
