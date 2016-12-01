@@ -27,6 +27,17 @@
                     })
                 ;
 
+                $('#member')
+                    .visibility({
+                        once: false,
+                        onTopPassed : function() {
+                            $('#memberlink').addClass("active");
+                        },
+                        onTopPassedReverse: function() {
+                            $('#memberlink').removeClass("active");
+                        }
+                    });
+
                 // create sidebar and attach to menu open
                 $('.ui.sidebar')
                     .sidebar('attach events', '.toc.item')
@@ -48,23 +59,9 @@
 
 <div class="ui large inverted top fixed hidden menu">
     <div class="ui container">
-        <a class="active item">Home</a>
-        <a class="item">Work</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a>
-        <div class="ui dropdown item" tabindex="0">
-            Dropdown
-            <i class="dropdown icon"></i>
-            <div class="menu" tabindex="-1">
-                <div class="item">Action</div>
-                <div class="item">Another Action</div>
-                <div class="item">Something else here</div>
-                <div class="divider"></div>
-                <div class="item">Separated Link</div>
-                <div class="divider"></div>
-                <div class="item">One more separated link</div>
-            </div>
-        </div>
+        <a class="item" href="#member" id="memberlink">Crew</a>
+        <a class="item">Item</a>
+        <a class="item">Item</a>
     </div>
 </div>
 
@@ -73,22 +70,9 @@
     <div class="masthead">
         <div class="ui container vertical center aligned segment">
             <div class="ui massive inverted menu">
-                <div class="item">Brand</div>
-                <div class="item">Link</div>
+                <a class="item" href="#member">Crew</a>
                 <a class="item">Link</a>
-                <div class="ui dropdown item" tabindex="0">
-                    Dropdown
-                    <i class="dropdown icon"></i>
-                    <div class="menu" tabindex="-1">
-                        <div class="item">Action</div>
-                        <div class="item">Another Action</div>
-                        <div class="item">Something else here</div>
-                        <div class="divider"></div>
-                        <div class="item">Separated Link</div>
-                        <div class="divider"></div>
-                        <div class="item">One more separated link</div>
-                    </div>
-                </div>
+                <a class="item">Link</a>
             </div>
 
             <div class="ui text container">
@@ -229,7 +213,7 @@
     <div id="member">
 
         <div class="ui container">
-            <h1 class="ui inverted header center aligned">Eine Crew ist die Summe ihrer Mitglieder.</h1>
+            <h1 class="ui teal header center aligned">Eine Crew ist die Summe ihrer Mitglieder.</h1>
             <div class="ui hidden divider"></div>
             <div class="ui hidden divider"></div>
 
