@@ -68,6 +68,7 @@
 {
     padding-top: 5em;
     padding-bottom: 5em;
+    background-color: #130A19;
 }
 
 #portofolio
@@ -97,7 +98,7 @@
 }
 
 .ui.cards>.card>.image {
-    background: none;
+    background: #130A19;
 }
 
 /*
