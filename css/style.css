@@ -11,6 +11,10 @@
     background: none !important;
 }
 
+.button.themecolor {
+    background-color: #FF585C !important;
+}
+
 .masthead h1.ui.header {
     margin-top: 3em;
     margin-bottom: 0em;
@@ -22,10 +26,16 @@
     font-weight: normal;
 }
 
+
+.ui.header.center.aligned {
+    font-size: 3em;
+    font-weight: normal;
+}
+
 #about {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-color: #FF7B71;
+    background-color: #FF585C;
 }
 #about .text {
     color: white;
@@ -42,6 +52,10 @@
     padding-top: 5em;
     padding-bottom: 5em;
     /* background-color: #252C2C; */
+}
+
+#portofolio img {
+    width: 40%;
 }
 
 .accordion {
