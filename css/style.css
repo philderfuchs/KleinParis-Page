@@ -37,15 +37,13 @@
 .ui.header.center.aligned {
     font-size: 3em;
     font-weight: normal;
+    /* color: #FF585C; */
 }
 
 #about {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-color: #FF585C;
-}
-#about .text {
-    color: white;
+    background-color: #EDE5ED;
 }
 
 #member
