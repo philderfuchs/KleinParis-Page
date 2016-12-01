@@ -74,6 +74,14 @@
     padding: 1em !important;
 }
 
+.ui.cards>.card {
+    box-shadow: none;
+}
+
+.ui.cards>.card>.image {
+    background: none;
+}
+
 /*
 .hidden.menu {
     display: none;
