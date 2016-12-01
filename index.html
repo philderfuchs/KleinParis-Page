@@ -27,6 +27,17 @@
                     })
                 ;
 
+                $('#about')
+                    .visibility({
+                        once: false,
+                        onTopPassed: function () {
+                            $('#aboutlink').addClass("active");
+                        },
+                        onTopPassedReverse: function () {
+                            $('#aboutlink').removeClass("active");
+                        }
+                    });
+
                 $('#member')
                     .visibility({
                         once: false,
@@ -40,14 +51,16 @@
                         }
                     });
 
-                $('#about')
+                $('#training')
                     .visibility({
                         once: false,
                         onTopPassed: function () {
-                            $('#aboutlink').addClass("active");
+                            $('#tranininglink').addClass("active");
+                            $('#memberlink').removeClass("active");
                         },
                         onTopPassedReverse: function () {
-                            $('#aboutlink').removeClass("active");
+                            $('#traininglink').removeClass("active");
+                            $('#memberlink').addClass("active");
                         }
                     });
 
@@ -74,7 +87,7 @@
     <div class="ui container">
         <div class="header item" href="#about" id="aboutlink"><img src="img/kleinparis_small.jpg"></div>
         <a class="item" href="#member" id="memberlink">Crew</a>
-        <a class="item">Item</a>
+        <a class="item" href="#training" id="traininglink">Training</a>
         <a class="item">Item</a>
         <div class="right menu">
             <a class="item"><img src="img/paper-plane_black.png"></a>
@@ -91,7 +104,7 @@
         <div class="ui container vertical center aligned segment">
             <div class="ui massive inverted menu">
                 <a class="item" href="#member">Crew</a>
-                <a class="item">Link</a>
+                <a class="item" href="#training">Training</a>
                 <a class="item">Link</a>
                 <div class="right menu">
                     <a class="item"><img src="img/paper-plane_white.png"></a>
@@ -394,26 +407,22 @@
     </div>
 
     <div id="training">
-        <div class="ui container">
+        <div class="ui text container">
 
             <h1 class="ui inverted header">
                 <img class="ui image" src="img/mortarboard.png">
                 <div class="content">
-                    Training
+                    Trainings: Der Zeitplan
                 </div>
             </h1>
 
-            <table class="ui stackable inverted celled table">
+            <table class="ui unstackable striped inverted celled table">
                 <thead>
                 <tr>
                     <th></th>
-                    <th>Mon</th>
-                    <th>Die</th>
-                    <th>Mit</th>
-                    <th>Do</th>
-                    <th>Fr</th>
-                    <th>Sa</th>
-                    <th>So</th>
+                    <th>Dienstag</th>
+                    <th>Freitag</th>
+                    <th>Sonntag</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -421,11 +430,8 @@
                     <td>13 - 16 Uhr</td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td class="selectable positive">
+                        <a href="#">
                         <div class="ui horizontal list">
                             <div class="item">
                                 <img class="ui mini circular image" src="img/heizhaus.png">
@@ -436,15 +442,15 @@
                             </div>
                         </div>
                         <p>Alle Urbanen Tanzstile willkommen.</p>
+                        </a>
                     </td>
                 </tr>
                 <tr>
                     <td>16 - 18 Uhr</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td class="selectable positive">
+                        <a href="#">
+
                         <div class="ui horizontal list">
                             <div class="item">
                                 <img class="ui mini circular image" src="img/heizhaus.png">
@@ -454,14 +460,15 @@
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </td>
-                    <td></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>18 - 20 Uhr</td>
-                    <td></td>
                     <td class="selectable negative">
+                        <a href="#">
+
                         <div class="ui horizontal list">
                             <div class="item">
                                 <img class="ui mini circular image" src="img/heizhaus.png">
@@ -471,10 +478,12 @@
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </td>
-                    <td></td>
-                    <td></td>
+
                     <td class="selectable negative">
+                        <a href="#">
+
                         <div class="ui horizontal list">
                             <div class="item">
                                 <img class="ui mini circular image" src="img/heizhaus.png">
@@ -484,8 +493,8 @@
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </td>
-                    <td></td>
                     <td></td>
                 </tr>
                 </tbody>
