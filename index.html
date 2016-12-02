@@ -15,8 +15,8 @@
             .ready(function () {
                 $(window).scroll(function (event) {
                     var scroll = $(window).scrollTop();
-                    $('#about').css("background-position-y", -0.2* scroll + "px");
-                    $('.masthead').css("background-position-y", -0.1* scroll + "px");
+                    $('#about').css("background-position-y", -0.1 * scroll + "px");
+                    $('.masthead').css("background-position-y", -0.1 * scroll + "px");
                 });
 
                 // fix menu when passed
@@ -165,7 +165,9 @@
                         Wir geben es weiter.
                         <div class="sub header">HipHop lebt vom Autausch. Traniert mit uns, lernt von uns.</div>
                     </h2>
-                    <a href="#training"><button class="ui inverted yellow button">Zeitplan</button></a>
+                    <a href="#training">
+                        <button class="ui inverted yellow button">Zeitplan</button>
+                    </a>
 
                 </div>
                 <div class="two wide column"></div>
@@ -409,100 +411,113 @@
 
     </div>
     <div id="training" class="section">
-        <div class="ui text container">
-
-            <h1 class="ui inverted header">
-                <img class="ui image" src="img/mortarboard.png">
-                <div class="content">
-                    Trainingszeiten
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="five wide column">
+                    <h2 class="ui inverted header">
+                        <img src="img/mortarboard.png">
+                        <div class="content">
+                            Trainingszeiten
+                            <div class="sub header">Trainiert mit uns, lernt von uns.</div>
+                        </div>
+                    </h2>
+                    <div class="ui inverted segment">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum...
+                    </div>
+                    <div class="ui center aligned header">
+                        <div class="themecolor ui large button"><i class="mail icon"></i>Anmelden</div>
+                    </div>
                 </div>
-            </h1>
-
-            <table class="ui teal inverted unstackable striped celled table">
-                <thead>
-                <tr>
-                    <th></th>
-                    <th>Dienstag</th>
-                    <th>Freitag</th>
-                    <th>Sonntag</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>13 - 16 Uhr</td>
-                    <td></td>
-                    <td></td>
-                    <td class="selectable positive">
-                        <a href="#">
-                            <div class="ui horizontal list">
-                                <div class="item">
-                                    <img class="ui mini circular image" src="img/heizhaus.png">
-                                    <div class="content">
-                                        <div class="ui sub header">Freies Training</div>
-                                        Heizhaus
+                <div class="eleven wide column">
+                    <table class="ui teal inverted unstackable striped celled table">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Dienstag</th>
+                            <th>Freitag</th>
+                            <th>Sonntag</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>13 - 16 Uhr</td>
+                            <td></td>
+                            <td></td>
+                            <td class="selectable positive">
+                                <a href="#">
+                                    <div class="ui horizontal list">
+                                        <div class="item">
+                                            <img class="ui mini circular image" src="img/heizhaus.png">
+                                            <div class="content">
+                                                <div class="ui sub header">Freies Training</div>
+                                                Heizhaus
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <p>Alle Urbanen Tanzstile willkommen.</p>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>16 - 18 Uhr</td>
-                    <td></td>
-                    <td class="selectable positive">
-                        <a href="#">
+                                    <p>Alle Urbanen Tanzstile willkommen.</p>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16 - 18 Uhr</td>
+                            <td></td>
+                            <td class="selectable positive">
+                                <a href="#">
 
-                            <div class="ui horizontal list">
-                                <div class="item">
-                                    <img class="ui mini circular image" src="img/heizhaus.png">
-                                    <div class="content">
-                                        <div class="ui sub header">Nachwuchstraining</div>
-                                        Heizhaus
+                                    <div class="ui horizontal list">
+                                        <div class="item">
+                                            <img class="ui mini circular image" src="img/heizhaus.png">
+                                            <div class="content">
+                                                <div class="ui sub header">Nachwuchstraining</div>
+                                                Heizhaus
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>18 - 20 Uhr</td>
-                    <td class="selectable negative">
-                        <a href="#">
+                                </a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18 - 20 Uhr</td>
+                            <td class="selectable negative">
+                                <a href="#">
 
-                            <div class="ui horizontal list">
-                                <div class="item">
-                                    <img class="ui mini circular image" src="img/heizhaus.png">
-                                    <div class="content">
-                                        <div class="ui sub header">Geschlossenes Training</div>
-                                        Heizhaus
+                                    <div class="ui horizontal list">
+                                        <div class="item">
+                                            <img class="ui mini circular image" src="img/heizhaus.png">
+                                            <div class="content">
+                                                <div class="ui sub header">Geschlossenes Training</div>
+                                                Heizhaus
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </td>
+                                </a>
+                            </td>
 
-                    <td class="selectable negative">
-                        <a href="#">
+                            <td class="selectable negative">
+                                <a href="#">
 
-                            <div class="ui horizontal list">
-                                <div class="item">
-                                    <img class="ui mini circular image" src="img/heizhaus.png">
-                                    <div class="content">
-                                        <div class="ui sub header">Geschlossenes Training</div>
-                                        Heizhaus
+                                    <div class="ui horizontal list">
+                                        <div class="item">
+                                            <img class="ui mini circular image" src="img/heizhaus.png">
+                                            <div class="content">
+                                                <div class="ui sub header">Geschlossenes Training</div>
+                                                Heizhaus
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </td>
-                    <td></td>
-                </tr>
-                </tbody>
-            </table>
-            <div class="ui center aligned header">
-                <div class="themecolor ui huge button"><i class="mail icon"></i>Anmelden</div>
+                                </a>
+                            </td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

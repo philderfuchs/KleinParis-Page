@@ -34,7 +34,7 @@
 }
 
 
-.ui.header.center.aligned {
+#about .header.center.aligned {
     font-size: 3em;
     font-weight: normal;
     /* color: #FF585C; */
@@ -50,7 +50,7 @@
     position: relative;
     mix-blend-mode: multiply;
     background-image: url(../img/about.jpg);
-    background-blend-mode: overlay;
+    background-blend-mode: color-burn;
     background-position-y: 0px;
 }
 
