@@ -60,7 +60,7 @@
 }
 
 #about {
-    background-color: rgba(40, 0, 40, .5);
+    background-color: rgba(80, 0, 35, .5);
     position: relative;
     mix-blend-mode: multiply;
     background-image: url(../img/about.jpg);
