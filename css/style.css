@@ -40,26 +40,32 @@
     /* color: #FF585C; */
 }
 
-#about {
-    padding-top: 5em;
-    padding-bottom: 5em;
-    background-color: rgba(50, 0, 50, 0.7);
-    position: relative;
-    mix-blend-mode: multiply
+.section {
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
-#about:after{
+#about {
+    background-color: rgba(40, 0, 40, .5);
+    position: relative;
+    mix-blend-mode: multiply;
+    background-image: url(../img/about.jpg);
+    background-blend-mode: overlay;
+    background-position-y: 0px;
+}
+
+/*#about:after{
     content : "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/about.jpg");
+    background-image: url("../img/about3.jpg");
     width: 100%;
     height: 100%;
     opacity : 0.5;
     z-index: -1;
-}
+} */
 
 #about .header {
     color: #FF585C;
@@ -67,14 +73,12 @@
 
 #member
 {
-    padding-top: 5em;
-    padding-bottom: 5em;
+
 }
 
 #portofolio
 {
-    padding-top: 5em;
-    padding-bottom: 5em;
+
     background-color: #1B1C1D;
 }
 
@@ -88,8 +92,7 @@
 
 #training
 {
-    padding-top: 5em;
-    padding-bottom: 5em;
+
     background-color: #1B1C1D;
 }
 
