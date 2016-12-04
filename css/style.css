@@ -2,6 +2,10 @@
     display: none;
 }
 
+.menu .header.item {
+	filter: invert(100%);
+}
+
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -19,6 +23,9 @@
 .masthead {
     background-image: url("../img/header.jpg");
     height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1B1C1D;
 }
 
 .masthead .menu {
@@ -60,12 +67,13 @@
 }
 
 #about {
-    background-color: rgba(80, 0, 35, .5);
+    background-color: rgba(255, 255, 255, .85);
     position: relative;
-    mix-blend-mode: multiply;
     background-image: url(../img/about.jpg);
-    background-blend-mode: color-burn;
+    background-blend-mode: lighten;
     background-position-y: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*#about:after{
