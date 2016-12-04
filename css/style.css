@@ -2,7 +2,7 @@
     display: none;
 }
 
-.menu .header.item {
+.menu #aboutimage {
 	filter: invert(100%);
 }
 
@@ -66,11 +66,15 @@
     padding-bottom: 6em;
 }
 
-#about {
-    background-color: rgba(255, 255, 255, .85);
+#about{
+    background-color: #1B1C1D;
+}
+
+#about-inner {
+    background-color: rgba(27, 28, 29, .7);
     position: relative;
     background-image: url(../img/about.jpg);
-    background-blend-mode: lighten;
+    background-blend-mode: color-dodge;
     background-position-y: 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,12 +99,15 @@
 
 #member
 {
+    background-color: #FFFFFF;
+}
 
+#shows {
+    background-color: #1B1C1D;
 }
 
 #portofolio
 {
-
     background-color: #1B1C1D;
 }
 
@@ -114,7 +121,6 @@
 
 #training
 {
-
     background-color: #1B1C1D;
 }
 
