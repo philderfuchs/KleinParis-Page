@@ -13,6 +13,17 @@
     <script>
         $(document)
             .ready(function () {
+                $('#daniel-card').on("click", function () {
+                    $('#daniel-modal')
+                        .modal('show');
+                });
+
+                $('#alex-card').on("click", function () {
+                    $('#alex-modal')
+                        .modal('show');
+                });
+
+
                 $(window).scroll(function (event) {
                     var scroll = $(window).scrollTop();
                     $('#about-inner').css("background-position-y", -0.1 * scroll + "px");
@@ -101,6 +112,47 @@
 </head>
 <body>
 
+<div class="modals">
+    <div class="ui basic modal" id="daniel-modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Daniel
+        </div>
+        <div class="content">
+            <div class="videoWrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/bJ68VZPhKU4" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="actions">
+
+            <div class="ui positive right labeled icon button">
+                Kontakt
+                <i class="mail icon"></i>
+            </div>
+        </div>
+    </div>
+    <div class="ui basic modal" id="alex-modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Alex
+        </div>
+        <div class="content">
+            <div class="videoWrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/a-kKQDab_As" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="actions">
+
+            <div class="ui positive right labeled icon button">
+                Kontakt
+                <i class="mail icon"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="ui inverted pointing top fixed hidden menu">
     <div class="ui container">
         <a class="item" href="#about" id="aboutlink"><img src="img/kleinparis_small.jpg" id="aboutimage"></a>
@@ -112,7 +164,7 @@
             <a class="item" href="https://www.facebook.com/kleinPariser" target="_blank"><img
                     src="img/facebook.png"></a>
             <a class="item" href="https://www.youtube.com/user/sheaker1988" target="_blank"><img src="img/youtube.png"></a>
-            <a class="item" href="https://soundcloud.com/annskikleinparis" target="_blank"><img
+            <a class="item" href="https://soundcloud.com/philipp-anders-7" target="_blank"><img
                     src="img/soundcloud.png"></a>
         </div>
     </div>
@@ -157,7 +209,8 @@
 
                     <div class="row">
                         <div class="six wide center aligned column">
-                            <div class="themecolor ui huge button">Kontakt <i class="right arrow icon"></i></div>
+                            <div class="themecolor ui huge right labeled icon button">Kontakt <i
+                                    class="right arrow icon"></i></div>
                         </div>
                     </div>
                     <div class="row">
@@ -171,7 +224,7 @@
                                         src="img/youtube.png" class="social-media-icon"></a>
                             </div>
                             <div class="five wide center aligned column">
-                                <a class="item" href="https://soundcloud.com/annskikleinparis" target="_blank"><img
+                                <a class="item" href="https://soundcloud.com/philipp-anders-7" target="_blank"><img
                                         src="img/soundcloud.png" class="social-media-icon"></a>
                             </div>
                         </div>
@@ -368,12 +421,12 @@
                 <div class="twelve wide column">
 
                     <div class="ui three doubling cards">
-                        <div class="card">
+                        <div class="card" id="daniel-card">
                             <div class="image">
                                 <img src="img/daniel.jpg" class="member-avatar">
                             </div>
                             <div class="content">
-                                <div class="header">Daniel Grahnert</div>
+                                <div class="header">Daniel</div>
                                 <div class="meta">
                                     <a>HipHop / Popping / Locking</a>
                                 </div>
@@ -412,7 +465,7 @@
       </span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="alex-card">
                             <div class="image">
                                 <img src="img/alex.jpg" class="member-avatar">
                             </div>
