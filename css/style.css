@@ -29,24 +29,25 @@
 }
 
 .masthead .menu {
-    background: rgba(27, 28, 29, .5) !important;
+   /* background: rgba(27, 28, 29, .5) !important; */
+    background: none !important;
 }
 
 .button.themecolor {
     background-color: #FF585C !important;
+    width: 100%;
 }
 
-.masthead h1.ui.header {
-    margin-top: 3em;
-    margin-bottom: 0em;
-    font-size: 4em;
-    font-weight: normal;
-}
+/*.masthead h1.ui.header {*/
+    /*font-size: 2em;*/
+    /*font-weight: normal;*/
+/*}*/
 
-.masthead img {
+.masthead #logo {
     mix-blend-mode: screen;
     margin-top: 9em;
     margin-bottom: 0em;
+    width: 100%;
 }
 
 .masthead h2 {
@@ -54,6 +55,14 @@
     font-weight: normal;
 }
 
+.masthead .social-media-icon {
+    width: 80%;
+    margin-top: -0.5em;
+}
+
+.masthead .social-media-icon:hover {
+    margin-top: -0.6em;
+}
 
 #about .header.center.aligned {
     font-size: 3em;
